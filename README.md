@@ -36,3 +36,4 @@ jobs:
 ### Args
 
 * `update-existing-comment` - default: true, will update the preview comment if it exists, otherwise it will hide the old comment
+* `pulumi-cli` - default: pulumi, custom cli command (ie node pulumi.js)

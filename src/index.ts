@@ -3,7 +3,6 @@ import * as github from "@actions/github";
 import { exec } from "@actions/exec";
 
 import * as process from "process";
-import * as fs from "fs";
 
 const stack = core.getInput("stack", { required: true });
 const args = core.getInput("args", { required: true });
@@ -58,7 +57,7 @@ async function run() {
     },
     ignoreReturnCode: true,
   };
-  const cmd = "pulumi " + args;
+  const cmd = core.getInput("pulumi-cli") || "pulumi" + ' ' + args;
   core.info(`#### :tropical_drink: ${cmd}`);
   const exitCode = await exec(cmd, undefined, options);
   // # If the GitHub action stems from a Pull Request event, we may optionally
