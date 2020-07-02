@@ -57,7 +57,7 @@ async function run() {
     },
     ignoreReturnCode: true,
   };
-  const cmd = core.getInput("pulumi-cli") || "pulumi" + ' ' + args;
+  const cmd = (core.getInput("pulumi-cli") || "pulumi") + ' ' + args;
   core.info(`#### :tropical_drink: ${cmd}`);
   const exitCode = await exec(cmd, undefined, options);
   // # If the GitHub action stems from a Pull Request event, we may optionally
