@@ -85,7 +85,7 @@ function run() {
                 core.setFailed("Can't leave a comment, unknown github-token");
             }
             else {
-                let body = `#### :tropical_drink: \`${cmd}\`\n\`\`\`\n${output}\n\`\`\``;
+                let body = `#### :tropical_drink: \`${cmd}\` - ${stack}\n<details>\n<summary>Output</summary>\n\`\`\`\n${output}\n\`\`\`\n</details>`;
                 core.info(`Getting comments`);
                 const octokit = github.getOctokit(token);
                 const existing = yield octokit.issues.listComments({
