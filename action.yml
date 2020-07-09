@@ -9,12 +9,19 @@ inputs:
     required: true
   mode:
     description: 'Supported values: pr & up'
+    required: false
   root:
     description: "Pulumi's root path"
+    required: false
   comment-on-pr:
     description: "Leave a comment for PRs"
+    required: false
   github-token:
     description: "Github Token"
+    required: false
+  update-existing-comment:
+    description: "Updates existing comment instead of creating new comment (default true)"
+    required: false
 branding:
   icon: 'gift'
   color: 'blue'
