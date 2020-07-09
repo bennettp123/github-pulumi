@@ -22,6 +22,9 @@ inputs:
   update-existing-comment:
     description: "Updates existing comment instead of creating new comment (default true)"
     required: false
+  pulumi-cli:
+    description: "Specify an alternative path to the pulumi CLI"
+    required: false
 branding:
   icon: 'gift'
   color: 'blue'
