@@ -64,7 +64,7 @@
     is-plain-object "^3.0.0"
     universal-user-agent "^5.0.0"
 
-"@octokit/graphql@^4.3.1", "@octokit/graphql@^4.5.1":
+"@octokit/graphql@^4.3.1":
   version "4.5.1"
   resolved "https://registry.yarnpkg.com/@octokit/graphql/-/graphql-4.5.1.tgz#162aed1490320b88ce34775b3f6b8de945529fa9"
   integrity sha512-qgMsROG9K2KxDs12CO3bySJaYoUu2aic90qpFrv7A8sEBzZ7UFGvdgPKiLw5gOPYEYbS0Xf8Tvf84tJutHPulQ==
@@ -72,6 +72,20 @@
     "@octokit/request" "^5.3.0"
     "@octokit/types" "^5.0.0"
     universal-user-agent "^5.0.0"
+
+"@octokit/graphql@^4.5.8":
+  version "4.5.8"
+  resolved "https://registry.yarnpkg.com/@octokit/graphql/-/graphql-4.5.8.tgz#d42373633c3015d0eafce64a8ce196be167fdd9b"
+  integrity sha512-WnCtNXWOrupfPJgXe+vSmprZJUr0VIu14G58PMlkWGj3cH+KLZEfKMmbUQ6C3Wwx6fdhzVW1CD5RTnBdUHxhhA==
+  dependencies:
+    "@octokit/request" "^5.3.0"
+    "@octokit/types" "^6.0.0"
+    universal-user-agent "^6.0.0"
+
+"@octokit/openapi-types@^2.3.1":
+  version "2.3.1"
+  resolved "https://registry.yarnpkg.com/@octokit/openapi-types/-/openapi-types-2.3.1.tgz#4e06e97bfcce5ad64fe89a1b5bdbed05e31ed1ab"
+  integrity sha512-KTzpRDT07euvbBYbPs121YDqq5DT94nBDFIyogsDhOnWL8yDCHev6myeiPTgS+VLmyUbdNCYu6L/gVj+Bd1q8Q==
 
 "@octokit/plugin-paginate-rest@^2.2.0":
   version "2.2.3"
@@ -123,6 +137,14 @@
   resolved "https://registry.yarnpkg.com/@octokit/types/-/types-5.0.1.tgz#5459e9a5e9df8565dcc62c17a34491904d71971e"
   integrity sha512-GorvORVwp244fGKEt3cgt/P+M0MGy4xEDbckw+K5ojEezxyMDgCaYPKVct+/eWQfZXOT7uq0xRpmrl/+hliabA==
   dependencies:
+    "@types/node" ">= 8"
+
+"@octokit/types@^6.0.0":
+  version "6.3.2"
+  resolved "https://registry.yarnpkg.com/@octokit/types/-/types-6.3.2.tgz#d57069a0c3c1ae57a87342f1700e4184c9e038ed"
+  integrity sha512-H6cbnDumWOQJneyNKCBWgnktRqTWcEm6gq2cIS3frtVgpCqB8zguromnjIWJW375btjnxwmbYBTEAEouruZ2Yw==
+  dependencies:
+    "@octokit/openapi-types" "^2.3.1"
     "@types/node" ">= 8"
 
 "@types/node@>= 8", "@types/node@^14.0.14":
@@ -322,6 +344,11 @@ universal-user-agent@^5.0.0:
   integrity sha512-B5TPtzZleXyPrUMKCpEHFmVhMN6EhmJYjG5PQna9s7mXeSqGTLap4OpqLl5FCEFUI3UBmllkETwKf/db66Y54Q==
   dependencies:
     os-name "^3.1.0"
+
+universal-user-agent@^6.0.0:
+  version "6.0.0"
+  resolved "https://registry.yarnpkg.com/universal-user-agent/-/universal-user-agent-6.0.0.tgz#3381f8503b251c0d9cd21bc1de939ec9df5480ee"
+  integrity sha512-isyNax3wXoKaulPDZWHQqbmIx1k2tb9fb3GGDBRxCscfYV2Ch7WxPArBsFEG8s/safwXTT7H4QGhaIkTp9447w==
 
 which@^1.2.9:
   version "1.3.1"
